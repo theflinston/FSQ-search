@@ -8,9 +8,16 @@
 
 #import "FQSearchService.h"
 
+NSString * const FQ_SECRET_KEY = @"EGJPYWOZBVQ5DKEJOFGMSKQJLXZW3FFMNIRUUHOM21QLBYKK";
+NSString * const FQ_CLIENT_ID = @"QHF4MRCOOYBUATUF4ODJLS3A5CPJH4IMUCP0R5VE4WPSMKDJ";
+
 @implementation FQSearchService
 
-
+- (void) searchVenues:(NSString *)searchText completionHandler:(void (^)(NSArray *venues, NSError* error)) completioHandler {
+	//TODO: implement
+	
+	completioHandler(nil, nil);
+}
 
 
 @end

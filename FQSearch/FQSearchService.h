@@ -10,4 +10,9 @@
 
 @interface FQSearchService : NSObject
 
+/*
+ Search for venues using the FourSquare venue explore service
+ */
+- (void) searchVenues:(NSString *)searchText completionHandler:(void (^)(NSArray *venues, NSError* error)) completioHandler;
+
 @end
