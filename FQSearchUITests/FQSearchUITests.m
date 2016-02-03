@@ -8,7 +8,9 @@
 
 #import <XCTest/XCTest.h>
 
-@interface FQSearchUITests : XCTestCase
+@interface FQSearchUITests : XCTestCase {
+	XCUIApplication *app;
+}
 
 @end
 
@@ -24,17 +26,38 @@
     // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
     [[[XCUIApplication alloc] init] launch];
     
-    // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+    app = [[XCUIApplication alloc] init];
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+-(void)tearDown {
+	app = nil;
+	
+	[super tearDown];
 }
 
-- (void)testExample {
-    // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testSearchForLondon {
+	[self searchUsingText:@"London"];
+	
+	//this results shoudl be in the list, we should be able to selecte them
+	XCUIElement *fqSearchTableViewTable = app.tables[@"fq_search__table_view"];
+	[fqSearchTableViewTable.staticTexts[@"Hyde Park"] tap];
+	[fqSearchTableViewTable.staticTexts[@"Hampstead Heath"] tap];
+	[fqSearchTableViewTable.staticTexts[@"Greenwich Park"] tap];
+}
+
+- (void) testSearchWithLessThanThreeChars {
+	[self searchUsingText:@"ln"];
+	
+	//an alert should be present
+	[app.alerts[@"Search to short"].collectionViews.buttons[@"OK"] tap];
+}
+
+- (void) searchUsingText:(NSString*)searchText {
+	
+	XCUIElement *searchForVenuesSearchField = app.tables[@"fq_search__table_view"].searchFields[@"Search for venues"];
+	[searchForVenuesSearchField tap];
+	[searchForVenuesSearchField typeText:searchText];
+	[app.buttons[@"Search"] tap];
 }
 
 @end

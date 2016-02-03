@@ -22,6 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	self.tableView.accessibilityIdentifier = @"fq_search__table_view";
+	self.searchBar.accessibilityIdentifier = @"fq_search__search_bar";
 }
 
 
