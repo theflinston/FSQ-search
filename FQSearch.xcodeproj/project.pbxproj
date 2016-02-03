@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		279BBFF71C622B830065862B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BBFF61C622B830065862B /* main.m */; };
+		279BBFFA1C622B830065862B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BBFF91C622B830065862B /* AppDelegate.m */; };
+		279BC0001C622B830065862B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279BBFFE1C622B830065862B /* Main.storyboard */; };
+		279BC0021C622B830065862B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279BC0011C622B830065862B /* Assets.xcassets */; };
+		279BC0051C622B830065862B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279BC0031C622B830065862B /* LaunchScreen.storyboard */; };
+		279BC0101C622B830065862B /* FQVenueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BC00F1C622B830065862B /* FQVenueTests.m */; };
+		279BC01B1C622B830065862B /* FQSearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BC01A1C622B830065862B /* FQSearchUITests.m */; };
+		279BC02A1C622C660065862B /* FQSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BC0291C622C660065862B /* FQSearchTableViewController.m */; };
+		279BC02D1C622D340065862B /* FQSearchService.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BC02C1C622D340065862B /* FQSearchService.m */; };
+		279BC0321C622D670065862B /* FQVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BC0311C622D670065862B /* FQVenue.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		279BC00C1C622B830065862B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 279BBFEA1C622B830065862B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 279BBFF11C622B830065862B;
+			remoteInfo = FQSearch;
+		};
+		279BC0171C622B830065862B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 279BBFEA1C622B830065862B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 279BBFF11C622B830065862B;
+			remoteInfo = FQSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		279BBFF21C622B830065862B /* FQSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FQSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		279BBFF61C622B830065862B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		279BBFF81C622B830065862B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		279BBFF91C622B830065862B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		279BBFFF1C622B830065862B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		279BC0011C622B830065862B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		279BC0041C622B830065862B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		279BC0061C622B830065862B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		279BC00B1C622B830065862B /* FQSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FQSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		279BC00F1C622B830065862B /* FQVenueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQVenueTests.m; sourceTree = "<group>"; };
+		279BC0111C622B830065862B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		279BC0161C622B830065862B /* FQSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FQSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		279BC01A1C622B830065862B /* FQSearchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQSearchUITests.m; sourceTree = "<group>"; };
+		279BC01C1C622B830065862B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		279BC0281C622C660065862B /* FQSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQSearchTableViewController.h; sourceTree = "<group>"; };
+		279BC0291C622C660065862B /* FQSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQSearchTableViewController.m; sourceTree = "<group>"; };
+		279BC02B1C622D340065862B /* FQSearchService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQSearchService.h; sourceTree = "<group>"; };
+		279BC02C1C622D340065862B /* FQSearchService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQSearchService.m; sourceTree = "<group>"; };
+		279BC0301C622D670065862B /* FQVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQVenue.h; sourceTree = "<group>"; };
+		279BC0311C622D670065862B /* FQVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQVenue.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		279BBFEF1C622B830065862B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279BC0081C622B830065862B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279BC0131C622B830065862B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		279BBFE91C622B830065862B = {
+			isa = PBXGroup;
+			children = (
+				279BBFF41C622B830065862B /* FQSearch */,
+				279BC00E1C622B830065862B /* FQSearchTests */,
+				279BC0191C622B830065862B /* FQSearchUITests */,
+				279BBFF31C622B830065862B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		279BBFF31C622B830065862B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				279BBFF21C622B830065862B /* FQSearch.app */,
+				279BC00B1C622B830065862B /* FQSearchTests.xctest */,
+				279BC0161C622B830065862B /* FQSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		279BBFF41C622B830065862B /* FQSearch */ = {
+			isa = PBXGroup;
+			children = (
+				279BBFF81C622B830065862B /* AppDelegate.h */,
+				279BBFF91C622B830065862B /* AppDelegate.m */,
+				279BC0281C622C660065862B /* FQSearchTableViewController.h */,
+				279BC0291C622C660065862B /* FQSearchTableViewController.m */,
+				279BC02E1C622D3D0065862B /* Services */,
+				279BC02F1C622D480065862B /* Model */,
+				279BBFFE1C622B830065862B /* Main.storyboard */,
+				279BC0011C622B830065862B /* Assets.xcassets */,
+				279BC0031C622B830065862B /* LaunchScreen.storyboard */,
+				279BC0061C622B830065862B /* Info.plist */,
+				279BBFF51C622B830065862B /* Supporting Files */,
+			);
+			path = FQSearch;
+			sourceTree = "<group>";
+		};
+		279BBFF51C622B830065862B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				279BBFF61C622B830065862B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		279BC00E1C622B830065862B /* FQSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				279BC00F1C622B830065862B /* FQVenueTests.m */,
+				279BC0111C622B830065862B /* Info.plist */,
+			);
+			path = FQSearchTests;
+			sourceTree = "<group>";
+		};
+		279BC0191C622B830065862B /* FQSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				279BC01A1C622B830065862B /* FQSearchUITests.m */,
+				279BC01C1C622B830065862B /* Info.plist */,
+			);
+			path = FQSearchUITests;
+			sourceTree = "<group>";
+		};
+		279BC02E1C622D3D0065862B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				279BC02B1C622D340065862B /* FQSearchService.h */,
+				279BC02C1C622D340065862B /* FQSearchService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		279BC02F1C622D480065862B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				279BC0301C622D670065862B /* FQVenue.h */,
+				279BC0311C622D670065862B /* FQVenue.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		279BBFF11C622B830065862B /* FQSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 279BC01F1C622B830065862B /* Build configuration list for PBXNativeTarget "FQSearch" */;
+			buildPhases = (
+				279BBFEE1C622B830065862B /* Sources */,
+				279BBFEF1C622B830065862B /* Frameworks */,
+				279BBFF01C622B830065862B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FQSearch;
+			productName = FQSearch;
+			productReference = 279BBFF21C622B830065862B /* FQSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		279BC00A1C622B830065862B /* FQSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 279BC0221C622B830065862B /* Build configuration list for PBXNativeTarget "FQSearchTests" */;
+			buildPhases = (
+				279BC0071C622B830065862B /* Sources */,
+				279BC0081C622B830065862B /* Frameworks */,
+				279BC0091C622B830065862B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				279BC00D1C622B830065862B /* PBXTargetDependency */,
+			);
+			name = FQSearchTests;
+			productName = FQSearchTests;
+			productReference = 279BC00B1C622B830065862B /* FQSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		279BC0151C622B830065862B /* FQSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 279BC0251C622B830065862B /* Build configuration list for PBXNativeTarget "FQSearchUITests" */;
+			buildPhases = (
+				279BC0121C622B830065862B /* Sources */,
+				279BC0131C622B830065862B /* Frameworks */,
+				279BC0141C622B830065862B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				279BC0181C622B830065862B /* PBXTargetDependency */,
+			);
+			name = FQSearchUITests;
+			productName = FQSearchUITests;
+			productReference = 279BC0161C622B830065862B /* FQSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		279BBFEA1C622B830065862B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Tiago Santos";
+				TargetAttributes = {
+					279BBFF11C622B830065862B = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					279BC00A1C622B830065862B = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 279BBFF11C622B830065862B;
+					};
+					279BC0151C622B830065862B = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 279BBFF11C622B830065862B;
+					};
+				};
+			};
+			buildConfigurationList = 279BBFED1C622B830065862B /* Build configuration list for PBXProject "FQSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 279BBFE91C622B830065862B;
+			productRefGroup = 279BBFF31C622B830065862B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				279BBFF11C622B830065862B /* FQSearch */,
+				279BC00A1C622B830065862B /* FQSearchTests */,
+				279BC0151C622B830065862B /* FQSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		279BBFF01C622B830065862B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279BC0051C622B830065862B /* LaunchScreen.storyboard in Resources */,
+				279BC0021C622B830065862B /* Assets.xcassets in Resources */,
+				279BC0001C622B830065862B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279BC0091C622B830065862B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279BC0141C622B830065862B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		279BBFEE1C622B830065862B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279BC0321C622D670065862B /* FQVenue.m in Sources */,
+				279BC02A1C622C660065862B /* FQSearchTableViewController.m in Sources */,
+				279BBFFA1C622B830065862B /* AppDelegate.m in Sources */,
+				279BC02D1C622D340065862B /* FQSearchService.m in Sources */,
+				279BBFF71C622B830065862B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279BC0071C622B830065862B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279BC0101C622B830065862B /* FQVenueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279BC0121C622B830065862B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279BC01B1C622B830065862B /* FQSearchUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		279BC00D1C622B830065862B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 279BBFF11C622B830065862B /* FQSearch */;
+			targetProxy = 279BC00C1C622B830065862B /* PBXContainerItemProxy */;
+		};
+		279BC0181C622B830065862B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 279BBFF11C622B830065862B /* FQSearch */;
+			targetProxy = 279BC0171C622B830065862B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		279BBFFE1C622B830065862B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				279BBFFF1C622B830065862B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		279BC0031C622B830065862B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				279BC0041C622B830065862B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		279BC01D1C622B830065862B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		279BC01E1C622B830065862B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		279BC0201C622B830065862B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FQSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theflinston.FQSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		279BC0211C622B830065862B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FQSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theflinston.FQSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		279BC0231C622B830065862B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FQSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theflinston.FQSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FQSearch.app/FQSearch";
+			};
+			name = Debug;
+		};
+		279BC0241C622B830065862B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FQSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theflinston.FQSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FQSearch.app/FQSearch";
+			};
+			name = Release;
+		};
+		279BC0261C622B830065862B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FQSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theflinston.FQSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FQSearch;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		279BC0271C622B830065862B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FQSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theflinston.FQSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FQSearch;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		279BBFED1C622B830065862B /* Build configuration list for PBXProject "FQSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				279BC01D1C622B830065862B /* Debug */,
+				279BC01E1C622B830065862B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		279BC01F1C622B830065862B /* Build configuration list for PBXNativeTarget "FQSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				279BC0201C622B830065862B /* Debug */,
+				279BC0211C622B830065862B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		279BC0221C622B830065862B /* Build configuration list for PBXNativeTarget "FQSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				279BC0231C622B830065862B /* Debug */,
+				279BC0241C622B830065862B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		279BC0251C622B830065862B /* Build configuration list for PBXNativeTarget "FQSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				279BC0261C622B830065862B /* Debug */,
+				279BC0271C622B830065862B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 279BBFEA1C622B830065862B /* Project object */;
+}
