@@ -52,21 +52,38 @@
 	if (searchBar.text.length >= 3) {
 		[searchBar resignFirstResponder];
 		FQSearchService *searchService = [[FQSearchService alloc] init];
+		__weak typeof(self) weakSelf = self;
 		[searchService searchVenues:searchBar.text
 				  completionHandler:^(NSArray *venues, NSError *error) {
-					  if (!error) {
-						  self.venues = venues;
+					  if (!error && venues.count) {
+						  weakSelf.venues = venues;
 						  dispatch_async(dispatch_get_main_queue(), ^{
-							  [self.tableView reloadData];
+							  [weakSelf.tableView reloadData];
 						  });
 					  } else {
+						  NSString *alertTitle;
+						  NSString *alertMessage;
+						  UIAlertAction *alertAction;;
+						  if(error){
+							  alertTitle = @"No venues found";
+							  alertAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+								  [searchBar becomeFirstResponder];
+							  }];
+						  } else {
+							  alertTitle = @"Error";
+							  alertMessage = error.description;
+							  alertAction =[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+						  }
+						  
 						  UIAlertController * alert =   [UIAlertController
-														alertControllerWithTitle:@"Error"
-														message:error.description
-														preferredStyle:UIAlertControllerStyleAlert];
-						  [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
-						  [self presentViewController:alert animated:YES completion:nil];
+														 alertControllerWithTitle:alertTitle
+														 message:alertMessage
+														 preferredStyle:UIAlertControllerStyleAlert];
+						  
+						  [alert addAction:alertAction];
+						  [weakSelf presentViewController:alert animated:YES completion:nil];
 					  }
+					  
 		}];
 
 	} else {
